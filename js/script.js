@@ -9,16 +9,13 @@ function beepBoop(number) {
     const beepBoopArray = number.split(" ");
     for (let i = 0; i < beepBoopArray.length; i++) {
         if (beepBoopArray[i] === "3") {
-            console.log("Won't you be my neighbor?");
-            console.log(beepBoopArray);
+            return "Won't you be my neighbor?";
 
         } else if (beepBoopArray[i] === "2") {
-            console.log("Boop!");
-            console.log(beepBoopArray);
+            return "Boop!";
 
         } else if (beepBoopArray[i] === "1") {
             return "Beep!";
-            console.log(beepBoopArray);
 
         } else {
             console.log(beepBoopArray);

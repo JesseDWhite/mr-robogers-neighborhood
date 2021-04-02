@@ -11,7 +11,7 @@ function beepBoop(number) {
     let responseArray = []
     for (let i = 0; i < number.length; i++) {
         let convertResponseArr = number.toString()
-        if (beepBoopArray[i] === numbersArray[0]) {
+        if (convertedResponseArr.includes(3)) {
             responseArray.push(" Won't you be my neighbor?");
 
         } else if (beepBoopArray[i] === numbersArray[1]) {

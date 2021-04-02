@@ -55,3 +55,9 @@ Code:
 const number = "1"
 beepBoop(1)
 Expected Output: "Beep!"
+
+Test: "it should display all user inputs onto the webpage."
+Code:
+const number = "123"
+beepBoop(123)
+Expectex Output: "Beep!BoopWon't you be my neighbor?"

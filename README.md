@@ -22,3 +22,10 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 _{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
 ## Contact Information
 _{Add your contact information here.}_
+## Specs
+
+Describe beepBoop()
+
+Test: "it should return an array with a given number if a given number is inputed."
+Code: beepBoop(0)
+Expected Output: ["0"]

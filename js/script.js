@@ -7,7 +7,7 @@ const numbersArray = ["3", "2", "1"]
 // ------------------------------------business logic-----------------------------------------------
 
 function beepBoop(number) {
-    const beepBoopArray = number.split("");
+    const beepBoopArray = number.split(" ");
     let responseArray = []
     for (let i = 0; i < beepBoopArray.length; i++) {
         let convertResponseArr = number.toString()
@@ -17,7 +17,7 @@ function beepBoop(number) {
         } else if (convertResponseArr.includes("2")) {
             responseArray.push(" Boop!");
 
-        } else if (convertResponseArr.inludes("1")) {
+        } else if (convertResponseArr.includes("1")) {
             responseArray.push(" Beep!");
 
         } else {

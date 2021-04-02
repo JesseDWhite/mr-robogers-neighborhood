@@ -34,10 +34,14 @@ Test: "it should return an array of "Beep!" if the number 1 is given."
 Code: beepBoop(1)
 Expected Output: ["Beep!"]
 
-Test: "it should return "Won't you be my neighboor?" if 3 is given."
+Test: "it should return "Won't you be my neighbor?" if 3 is given."
 Code: beepBoop(3)
-Expected Output: ["Won't you be my neighboor?"]
+Expected Output: ["Won't you be my neighbor?"]
 
 Test: "it should return "Boop!" if the number 2."
 Code: beepBoop(2)
 Expected Output: ["Boop!"]
+
+Test: "it should compare the number in the given array and reaplace them with Beep, boop, and won't you be my neighbor?"
+Code: beepBoop("1 2 3")
+Expected Output: ["Beep!", "Boop", "Won't you be my neighbor?"]

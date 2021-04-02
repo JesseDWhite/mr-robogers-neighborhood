@@ -20,12 +20,18 @@ function beepBoop(number) {
         if (element.includes(3)) {
             responseArray.push("WON'T YOU BE MY NEIGHBOR?")
             console.log("I FOUND A 3!")
+            console.log(responseArray)
         } else if (element.includes(2)) {
             responseArray.push("BOOP!")
             console.log("I FOUND A 2!")
+            console.log(responseArray)
         } else if (element.includes(1)) {
             responseArray.push("BEEP!")
             console.log("I FOUND A 1!")
+            console.log(responseArray)
+        } else {
+            responseArray.push(element)
+            console.log(responseArray)
         }
     })
 }
@@ -67,7 +73,7 @@ $(document).ready(function () {
         event.preventDefault()
         const response = $("#user-input").val()
 
-        $("#response").text(beepBoop(response));
+        $("#response").html(beepBoop(response));
         $("#response").fadeIn(response)
         // $("#response").fadeOut(response)
     })

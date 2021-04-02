@@ -76,6 +76,6 @@ Expected Output: "5"
 
 Test: "it should return a new translation when 32 and 1 are added with a space seperating them."
 Code:
-const number = "32 5"
-beepBoop("32", "5")
+const number = "32 1"
+beepBoop("32", "1")
 Expected Output: "Won't you be my neighbor?, Beep!"

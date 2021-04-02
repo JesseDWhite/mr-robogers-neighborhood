@@ -30,6 +30,10 @@ Test: "it should return an array with a given number if a given number is inpute
 Code: beepBoop(0)
 Expected Output: ["0"]
 
-Test: it should return an array of "Beep!" if the number 1 is given."
+Test: "it should return an array of "Beep!" if the number 1 is given."
 Code: beepBoop(1)
 Expected Output: ["Beep!"]
+
+Test: "it should return "Won't you be my neighboor?" if 3 is given."
+Code: beepBoop(3)
+Expected Output: ["Won't you be my neighboor?"]

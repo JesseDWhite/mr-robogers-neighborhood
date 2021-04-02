@@ -1,7 +1,7 @@
 // ------------------------------------utility logic------------------------------------------------
 const robogersArray = ["Beep!", "Boop", "Won't you be my neighbor?"]
 
-const numbersArray = ["1", "2", "3"]
+const numbersArray = ["3", "2", "1"]
 
 
 // ------------------------------------business logic-----------------------------------------------
@@ -10,17 +10,17 @@ function beepBoop(number) {
     const beepBoopArray = number.split("");
     let responseArray = []
     for (let i = 0; i < beepBoopArray.length; i++) {
-        if (beepBoopArray[i] === "3") {
+        if (beepBoopArray[i] === numbersArray[2]) {
             responseArray.push("Won't you be my neighbor?");
 
-        } else if (beepBoopArray[i] === "2") {
+        } else if (beepBoopArray[i] === numbersArray[1]) {
             responseArray.push("Boop!");
 
-        } else if (beepBoopArray[i] === "1") {
+        } else if (beepBoopArray[i] === numbersArray[0]) {
             responseArray.push("Beep!");
 
-        } else {
-            return "beep boop get outa mah hood!";
+        } else if (beepBoopArray[i] !== numbersArray) {
+            responseArray.push(number)
         }
     } return responseArray
 }

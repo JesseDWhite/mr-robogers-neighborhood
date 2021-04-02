@@ -60,4 +60,10 @@ Test: "it should display all user inputs onto the webpage."
 Code:
 const number = "123"
 beepBoop(123)
-Expectex Output: "Beep!BoopWon't you be my neighbor?"
+Expected Output: "Beep!BoopWon't you be my neighbor?"
+
+Test: "it should replace the number 32 with "Won't you be my neighbor?"
+Code:
+const number = "32"
+beepBoop(32)
+Expected Output: "Won't you be my neighbor?"

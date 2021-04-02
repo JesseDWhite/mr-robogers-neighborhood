@@ -9,22 +9,22 @@ const numbersArray = ["3", "2", "1"]
 function beepBoop(number) {
     const beepBoopArray = number.split("");
     let responseArray = []
-    for (let i = 0; i < beepBoopArray.length; i++) {
-        if (beepBoopArray[i] === numbersArray[2]) {
-            responseArray.push("Won't you be my neighbor?");
+    for (let i = 0; i < number.length; i++) {
+        let convertResponseArr = number.toString()
+        if (beepBoopArray[i] === numbersArray[0]) {
+            responseArray.push(" Won't you be my neighbor?");
 
         } else if (beepBoopArray[i] === numbersArray[1]) {
-            responseArray.push("Boop!");
+            responseArray.push(" Boop!");
 
-        } else if (beepBoopArray[i] === numbersArray[0]) {
-            responseArray.push("Beep!");
+        } else if (beepBoopArray[i] === numbersArray[2]) {
+            responseArray.push(" Beep!");
 
-        } else if (beepBoopArray[i] !== numbersArray) {
-            responseArray.push(number)
+        } else (beepBoopArray[i] !== numbersArray) {
+            responseArray.push(number);
         }
-    } return responseArray
+    } return responseArray;
 }
-
 
 // ------------------------------------user interface logic-----------------------------------------
 $(document).ready(function () {
@@ -32,6 +32,8 @@ $(document).ready(function () {
         event.preventDefault()
         const response = $("#user-input").val()
 
-        $("#response").text(beepBoop(response))
+        $("#response").text(beepBoop(response));
+        $("#response").fadeIn(response)
+        // $("#response").fadeOut(response)
     })
 })

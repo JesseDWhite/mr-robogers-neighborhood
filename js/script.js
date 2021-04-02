@@ -9,19 +9,19 @@ const numbersArray = ["3", "2", "1"]
 function beepBoop(number) {
     const beepBoopArray = number.split("");
     let responseArray = []
-    for (let i = 0; i < number.length; i++) {
+    for (let i = 0; i < beepBoopArray.length; i++) {
         let convertResponseArr = number.toString()
-        if (convertedResponseArr.includes(3)) {
+        if (convertResponseArr.includes("3")) {
             responseArray.push(" Won't you be my neighbor?");
 
-        } else if (beepBoopArray[i] === numbersArray[1]) {
+        } else if (convertResponseArr.includes("2")) {
             responseArray.push(" Boop!");
 
-        } else if (beepBoopArray[i] === numbersArray[2]) {
+        } else if (convertResponseArr.inludes("1")) {
             responseArray.push(" Beep!");
 
-        } else (beepBoopArray[i] !== numbersArray) {
-            responseArray.push(number);
+        } else {
+            responseArray.push(convertResponseArr);
         }
     } return responseArray;
 }

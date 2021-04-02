@@ -11,7 +11,7 @@ function noInputtedWord(number) {
 
 // ------------------------------------business logic-----------------------------------------------
 function beepBoop(number) {
-    if (noInputtedWord(number)) {
+    if (number === " ") {
         return null
     }
     const beepBoopArray = number.split(" ")
@@ -72,6 +72,7 @@ $(document).ready(function () {
     $("form").submit(function (event) {
         event.preventDefault()
         const response = $("#user-input").val()
+
 
         $("#response").html(beepBoop(response));
         $("#response").fadeIn(response)

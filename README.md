@@ -29,3 +29,7 @@ Describe beepBoop()
 Test: "it should return an array with a given number if a given number is inputed."
 Code: beepBoop(0)
 Expected Output: ["0"]
+
+Test: it should return an array of "Beep!" if the number 1 is given."
+Code: beepBoop(1)
+Expected Output: ["Beep!"]

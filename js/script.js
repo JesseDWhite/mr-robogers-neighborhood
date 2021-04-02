@@ -5,22 +5,24 @@ const numbersArray = ["1", "2", "3"]
 
 
 // ------------------------------------business logic-----------------------------------------------
+
 function beepBoop(number) {
-    const beepBoopArray = number.split(" ");
+    const beepBoopArray = number.split("");
+    let responseArray = []
     for (let i = 0; i < beepBoopArray.length; i++) {
         if (beepBoopArray[i] === "3") {
-            return "Won't you be my neighbor?";
+            responseArray.push("Won't you be my neighbor?");
 
         } else if (beepBoopArray[i] === "2") {
-            return "Boop!";
+            responseArray.push("Boop!");
 
         } else if (beepBoopArray[i] === "1") {
-            return "Beep!";
+            responseArray.push("Beep!");
 
         } else {
-            console.log(beepBoopArray);
+            return "beep boop get outa mah hood!";
         }
-    } return beepBoopArray
+    } return responseArray
 }
 
 

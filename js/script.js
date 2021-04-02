@@ -8,11 +8,11 @@ const numbersArray = ["1", "2", "3"]
 function beepBoop(number) {
     const beepBoopArray = number.split(" ");
     for (let i = 0; i < beepBoopArray.length; i++)
-        if (beepBoopArray[2] === numbersArray[i]) {
+        if (beepBoopArray[i] === "3") {
             console.log("Won't you be my neighbor?");
-        } else if (beepBoopArray[1] === numbersArray[i]) {
+        } else if (beepBoopArray[i] === "2") {
             console.log("Boop!");
-        } else if (beepBoopArray[0] === numbersArray[i]) {
+        } else if (beepBoopArray[i] === "1") {
             console.log("Beep!");
         } else {
             console.log(beepBoopArray);

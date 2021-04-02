@@ -45,3 +45,7 @@ Expected Output: ["Boop!"]
 Test: "it should compare the number in the given array and reaplace them with Beep, boop, and won't you be my neighbor?"
 Code: beepBoop("1 2 3")
 Expected Output: ["Beep!", "Boop", "Won't you be my neighbor?"]
+
+Test: "it should return beep, boop, and won't you be my neighbor regardless of the input position."
+Code beepBoop("2 3 1")
+Expected output: ["Boop", "Beep!", "Won't you be my neighbor?"]

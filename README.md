@@ -37,3 +37,7 @@ Expected Output: ["Beep!"]
 Test: "it should return "Won't you be my neighboor?" if 3 is given."
 Code: beepBoop(3)
 Expected Output: ["Won't you be my neighboor?"]
+
+Test: "it should return "Boop!" if the number 2."
+Code: beepBoop(2)
+Expected Output: ["Boop!"]

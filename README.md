@@ -73,3 +73,9 @@ Code:
 const number = "5"
 beepBoop(5)
 Expected Output: "5"
+
+Test: "it should return a new translation when 32 and 1 are added with a space seperating them."
+Code:
+const number = "32 5"
+beepBoop("32", "5")
+Expected Output: "Won't you be my neighbor?, Beep!"

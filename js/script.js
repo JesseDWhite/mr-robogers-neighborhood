@@ -1,7 +1,4 @@
 // ------------------------------------utility logic------------------------------------------------
-const robogersArray = ["Beep!", "Boop", "Won't you be my neighbor?"]
-
-const numbersArray = ["3", "2", "1"]
 
 
 // ------------------------------------business logic-----------------------------------------------
@@ -11,17 +8,23 @@ function beepBoop(number) {
     let responseArray = []
     for (let i = 0; i < beepBoopArray.length; i++) {
         let convertResponseArr = number.toString()
-        if (convertResponseArr.includes("3")) {
+        if (convertResponseArr.includes(3)) {
             responseArray.push(" Won't you be my neighbor?");
+            console.log(convertResponseArr)
+            console.log(responseArray)
 
-        } else if (convertResponseArr.includes("2")) {
+        } else if (convertResponseArr.includes(2)) {
             responseArray.push(" Boop!");
+            console.log(convertResponseArr)
+            console.log(responseArray)
 
-        } else if (convertResponseArr.includes("1")) {
+        } else if (convertResponseArr !== "2" || "3") {
             responseArray.push(" Beep!");
+            console.log(convertResponseArr)
+            console.log(responseArray)
 
         } else {
-            responseArray.push(convertResponseArr);
+            responseArray.push(number);
         }
     } return responseArray;
 }

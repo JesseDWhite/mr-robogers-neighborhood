@@ -10,10 +10,16 @@ function beepBoop(number) {
     for (let i = 0; i < beepBoopArray.length; i++)
         if (beepBoopArray[i] === "3") {
             console.log("Won't you be my neighbor?");
+            console.log(beepBoopArray);
+
         } else if (beepBoopArray[i] === "2") {
             console.log("Boop!");
+            console.log(beepBoopArray);
+
         } else if (beepBoopArray[i] === "1") {
             console.log("Beep!");
+            console.log(beepBoopArray);
+
         } else {
             console.log(beepBoopArray);
         }

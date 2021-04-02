@@ -6,8 +6,13 @@ const numbersArray = ["1", "2", "3"]
 
 // ------------------------------------business logic-----------------------------------------------
 function beepBoop(number) {
-    const beepBoopArray = number.split(" ");
-    console.log(beepBoopArray)
+    const beepBoopArray = parseInt(number.split(" "));
+    if (beepBoopArray === 1) {
+        console.log("Beep!")
+    }
+    else {
+        console.log("That didn't work...")
+    }
 
 }
 

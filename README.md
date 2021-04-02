@@ -67,3 +67,9 @@ Code:
 const number = "32"
 beepBoop(32)
 Expected Output: "Won't you be my neighbor?"
+
+Test: "it should return the value of a number outside of 1,2, or 3"
+Code:
+const number = "5"
+beepBoop(5)
+Expected Output: "5"

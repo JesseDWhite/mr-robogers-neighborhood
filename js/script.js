@@ -18,13 +18,13 @@ function beepBoop(number) {
             console.log(convertResponseArr)
             console.log(responseArray)
 
-        } else if (convertResponseArr !== "2" || "3") {
+        } else if (convertResponseArr.includes(1)) {
             responseArray.push(" Beep!");
             console.log(convertResponseArr)
             console.log(responseArray)
 
         } else {
-            responseArray.push(number);
+            responseArray.push(convertResponseArr);
         }
     } return responseArray;
 }

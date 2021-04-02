@@ -49,3 +49,9 @@ Expected Output: ["Beep!", "Boop", "Won't you be my neighbor?"]
 Test: "it should return beep, boop, and won't you be my neighbor regardless of the input position."
 Code beepBoop("2 3 1")
 Expected output: ["Boop", "Beep!", "Won't you be my neighbor?"]
+
+Test: "it should return the different responses to the webpage."
+Code:
+const number = "1"
+beepBoop(1)
+Expected Output: "Beep!"

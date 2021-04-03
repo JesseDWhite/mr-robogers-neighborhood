@@ -1,13 +1,5 @@
 // ------------------------------------utility logic------------------------------------------------
-function noInputtedWord(number) {
-    for (let i = 0; i < arguments.length; i++) {
-        console.log(arguments[i]);
-        if (arguments[i].trim().length === 0) {
-            return true;
-        }
-    }
-    return false;
-}
+
 
 // ------------------------------------business logic-----------------------------------------------
 function beepBoop(number) {
@@ -32,7 +24,7 @@ function beepBoop(number) {
         } else {
             responseArray.push(element);
             // console.log(responseArray)
-        } return console.log(responseArray);
+        } responseArray;
     });
 };
 // function beepBoop(number) {
@@ -74,7 +66,7 @@ $(document).ready(function () {
         const response = $("#user-input").val();
 
         $("#response").text(beepBoop(response));
-        $("#response").fadeIn(response);
+        // $("#response").fadeIn(response);
         // $("#response").fadeOut(response)
     });
 });

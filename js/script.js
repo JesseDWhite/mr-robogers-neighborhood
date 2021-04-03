@@ -12,29 +12,29 @@ function noInputtedWord(number) {
 // ------------------------------------business logic-----------------------------------------------
 function beepBoop(number) {
     if (number === " ") {
-        return null
+        return null;
     }
-    const beepBoopArray = number.split(" ")
-    let responseArray = []
+    const beepBoopArray = number.split(" ");
+    let responseArray = [];
     beepBoopArray.forEach(function (element) {
         if (element.includes(3)) {
-            responseArray.push("WON'T YOU BE MY NEIGHBOR?")
-            console.log("I FOUND A 3!")
-            console.log(responseArray)
+            responseArray.push("WON'T YOU BE MY NEIGHBOR?");
+            // console.log("I FOUND A 3!")
+            // console.log(responseArray)
         } else if (element.includes(2)) {
-            responseArray.push("BOOP!")
-            console.log("I FOUND A 2!")
-            console.log(responseArray)
+            responseArray.push("BOOP!");
+            // console.log("I FOUND A 2!")
+            // console.log(responseArray)
         } else if (element.includes(1)) {
-            responseArray.push("BEEP!")
-            console.log("I FOUND A 1!")
-            console.log(responseArray)
+            responseArray.push("BEEP!");
+            // console.log("I FOUND A 1!")
+            // console.log(responseArray)
         } else {
-            responseArray.push(element)
-            console.log(responseArray)
-        }
-    })
-}
+            responseArray.push(element);
+            // console.log(responseArray)
+        } return console.log(responseArray);
+    });
+};
 // function beepBoop(number) {
 //     if (noInputtedWord(number)) {
 //         return null
@@ -70,12 +70,11 @@ function beepBoop(number) {
 // ------------------------------------user interface logic-----------------------------------------
 $(document).ready(function () {
     $("form").submit(function (event) {
-        event.preventDefault()
-        const response = $("#user-input").val()
+        event.preventDefault();
+        const response = $("#user-input").val();
 
-
-        $("#response").html(beepBoop(response));
-        $("#response").fadeIn(response)
+        $("#response").text(beepBoop(response));
+        $("#response").fadeIn(response);
         // $("#response").fadeOut(response)
-    })
-})
+    });
+});

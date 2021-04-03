@@ -1,5 +1,5 @@
 // ------------------------------------utility logic------------------------------------------------
-
+const robogerResponse = ["WON'T YOU BE MY NEIGHBOR?", "BOOP!", "BEEP!"]
 
 // ------------------------------------business logic-----------------------------------------------
 function beepBoop(number) {
@@ -10,21 +10,22 @@ function beepBoop(number) {
     let responseArray = [];
     beepBoopArray.forEach(function (element) {
         if (element.includes(3)) {
-            responseArray.push("WON'T YOU BE MY NEIGHBOR?");
+            responseArray.push(robogerResponse[0]);
             // console.log("I FOUND A 3!")
             // console.log(responseArray)
         } else if (element.includes(2)) {
-            responseArray.push("BOOP!");
+            responseArray.push(robogerResponse[1]);
             // console.log("I FOUND A 2!")
             // console.log(responseArray)
         } else if (element.includes(1)) {
-            responseArray.push("BEEP!");
+            responseArray.push(robogerResponse[2]);
             // console.log("I FOUND A 1!")
             // console.log(responseArray)
         } else {
             responseArray.push(element);
             // console.log(responseArray)
-        } responseArray;
+        }
+        return responseArray.toString();
     });
 };
 // function beepBoop(number) {
@@ -63,9 +64,9 @@ function beepBoop(number) {
 $(document).ready(function () {
     $("form").submit(function (event) {
         event.preventDefault();
-        const response = $("#user-input").val();
+        const robogersResponse = $("#user-input").val();
 
-        $("#response").text(beepBoop(response));
+        $("#response").text(beepBoop(robogersResponse));
         // $("#response").fadeIn(response);
         // $("#response").fadeOut(response)
     });

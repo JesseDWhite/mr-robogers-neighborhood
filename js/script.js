@@ -14,8 +14,8 @@ function countUp(number) {
 
 
 function beepBoop(number) {
-    if (number === " ") {
-        return null;
+    if (number !== robogersNumbers) {
+        countUp(number);
     }
     const beepBoopArray = number.split(" ");
     let responseArray = [];
@@ -44,8 +44,8 @@ $(document).ready(function () {
 
         $("#response").text(robogersResponse);
         $("#response").slideDown(robogersResponse);
-        $("#response").text(count);
-        $("#response").slideDown(count);
+        // $("#response").text(count);
+        // $("#response").slideDown(count);
 
     });
 });

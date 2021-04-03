@@ -1,35 +1,34 @@
 // ------------------------------------utility logic------------------------------------------------
-const robogerResponse = ["WON'T YOU BE MY NEIGHBOR?", "BOOP!", "BEEP!"]
+const robogerResponses = ["WON'T YOU BE MY NEIGHBOR?", "BOOP!", "BEEP!"];
 
-const robogersNumbers = ["3", "2", "1"]
+const robogersNumbers = ["3", "2", "1"];
 
 // ------------------------------------business logic-----------------------------------------------
-function beepBoop(number) {
-    const beepBoopArray = number.split(" ")
-    let responseArray = []
-    beepBoopArray.forEach(function (element) {
-        for (let i = 0; i < beepBoopArray.length; i++) {
-            if (beepBoopArray[i] === robogersNumbers[0]) {
-                responseArray.push(robogerResponse[0]);
+// function beepBoop(number) {
+//     const beepBoopArray = number.split(" ");
+//     let responseArray = [];
+//     beepBoopArray.forEach(function (element) {
+//         for (let i = 0; i < beepBoopArray.length; i++) {
+//             if (beepBoopArray[i] === robogersNumbers[0]) {
+//                 return responseArray.push(robogerResponse[0]);
 
 
-            } else if (beepBoopArray[i] === robogersNumbers[1]) {
-                responseArray.push(robogerResponse[1]);
+//             } else if (beepBoopArray[i] === robogersNumbers[1]) {
+//                 return responseArray.push(robogerResponse[1]);
 
 
-            } else if (beepBoopArray[i] === robogersNumbers[2]) {
-                responseArray.push(robogerResponse[2]);
+//             } else if (beepBoopArray[i] === robogersNumbers[2]) {
+//                 return responseArray.push(robogerResponse[2]);
 
 
-            } else {
-                responseArray.push(element);
-            }
-        } return console.log(responseArray.toString());
+//             } else {
+//                 return responseArray.push(element);
+//             }
+//         } return responseArray.toString();
 
-    })
-}
-
-
+//     });
+//     return responseArray.toString()
+// }
 
 // function beepBoop(number) {
 //     const beepBoopArray = number.split("");
@@ -47,34 +46,25 @@ function beepBoop(number) {
 //     }
 // }
 
-
-// function beepBoop(number) {
-//     if (number === " ") {
-//         return null;
-//     }
-//     const beepBoopArray = number.split(" ");
-//     let responseArray = [];
-//     beepBoopArray.forEach(function (element) {
-//         if (element.includes(3)) {
-//             responseArray.push(robogerResponse[0]);
-//             // console.log("I FOUND A 3!")
-//             // console.log(responseArray)
-//         } else if (element.includes(2)) {
-//             responseArray.push(robogerResponse[1]);
-//             // console.log("I FOUND A 2!")
-//             // console.log(responseArray)
-//         } else if (element.includes(1)) {
-//             responseArray.push(robogerResponse[2]);
-//             // console.log("I FOUND A 1!")
-//             // console.log(responseArray)
-//         } else {
-//             responseArray.push(element);
-//             // console.log(responseArray)
-//         }
-//         return responseArray.toString();
-//     });
-// };
-
+function beepBoop(number) {
+    if (number === " ") {
+        return null;
+    }
+    const beepBoopArray = number.split(" ");
+    let responseArray = [];
+    beepBoopArray.forEach(function (element) {
+        if (element.includes(3)) {
+            responseArray.push(robogerResponses[0]);
+        } else if (element.includes(2)) {
+            responseArray.push(robogerResponses[1]);
+        } else if (element.includes(1)) {
+            responseArray.push(robogerResponses[2]);
+        } else {
+            responseArray.push(element);
+        }
+    });
+    return responseArray;
+};
 
 // function beepBoop(number) {
 //     if (number === " ") {
@@ -110,10 +100,10 @@ $(document).ready(function () {
         event.preventDefault();
 
         const userInput = $("#user-input").val();
-        const robogersResponse = beepBoop(userInput)
+        const robogersResponse = beepBoop(userInput);
+        const spaces = robogersResponse.concat(" ")
 
-        $("#response").text(robogersResponse);
+        $("#response").html(spaces);
         $("#response").fadeIn(response);
-        // $("#response").fadeOut(response)
     });
 });

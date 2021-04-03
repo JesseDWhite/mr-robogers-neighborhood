@@ -34,5 +34,6 @@ $(document).ready(function () {
 
         $("#response").text(robogersResponse);
         $("#response").slideDown(robogersResponse);
+        $("#response").slideDown(robogersResponse);
     });
 });

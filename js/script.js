@@ -5,7 +5,7 @@ const robogersNumbers = ["3", "2", "1"];
 
 // ------------------------------------business logic-----------------------------------------------
 function countUp(number) {
-    const countArray = number.split(" ");
+    const countArray = number;
     let numberArray = [];
     for (let i = 0; i < countArray; i++) {
         numberArray.push(i + 1);

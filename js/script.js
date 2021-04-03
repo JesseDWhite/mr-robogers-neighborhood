@@ -33,6 +33,6 @@ $(document).ready(function () {
         const robogersResponse = beepBoop(userInput);
 
         $("#response").text(robogersResponse);
-        $("#response").fadeIn(robogersResponse);
+        $("#response").slideDown(robogersResponse);
     });
 });

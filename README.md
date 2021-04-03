@@ -14,7 +14,7 @@ _Mr. Roboger runs a great neighborhood, but he doesn't just let anyone in. Go ah
 * _You will then have an empty form field that you can ask Mr. Roboger a question_
 * _Once you submit the question, you should see his response below_
 ## Known Bugs
-* _Mr. Roboger's response does not show up in the poper section._
+* _Empty spaces are not ignored._
 ## License
 _MIT (C) Jesse White 2021_
 ## Contact Information

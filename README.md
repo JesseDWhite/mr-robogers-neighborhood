@@ -76,3 +76,11 @@ Code:
 const number = "32 1"
 beepBoop("32", "1")
 Expected Output: "Won't you be my neighbor?, Beep!"
+
+Describe countUp()
+
+Test: "It should return an array of numbers depending on the value given."
+Code: 
+number = 5
+countUp(5)
+Expected Output: [1, 2, 3, 4, 5]

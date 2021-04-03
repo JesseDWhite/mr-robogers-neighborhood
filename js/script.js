@@ -24,6 +24,7 @@ function beepBoop(number) {
     });
     return responseArray;
 };
+
 // ------------------------------------user interface logic-----------------------------------------
 $(document).ready(function () {
     $("form").submit(function (event) {

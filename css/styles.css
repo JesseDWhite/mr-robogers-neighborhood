@@ -8,5 +8,6 @@ body {
     font-size: 25px;
     font-family: 'Orbitron', sans-serif;
     display: none;
-    color: rgb(255, 130, 28);
+    color: rgb(65, 201, 255);
+    text-shadow: rgb(65, 201, 255) 1px 0 10px;
 }

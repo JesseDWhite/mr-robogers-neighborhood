@@ -12,11 +12,7 @@ function countUp(number) {
     } return numberArray;
 }
 
-
 function beepBoop(number) {
-    if (number !== robogersNumbers) {
-        countUp(number);
-    }
     const beepBoopArray = number.split(" ");
     let responseArray = [];
     beepBoopArray.forEach(function (element) {

@@ -11,3 +11,19 @@ body {
     color: rgb(65, 201, 255);
     text-shadow: rgb(65, 201, 255) 1px 0 10px;
 }
+button {
+    background: none;
+    color:#ffa260;
+    border: 2px solid;
+    padding: .5em 1em;
+    font-size: 1em;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s,transform 0.25s;
+}
+  
+  button:hover {
+    border-color: #f1ff5c;
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(0.25em);
+    cursor: pointer;
+}

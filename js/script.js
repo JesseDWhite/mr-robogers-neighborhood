@@ -35,13 +35,11 @@ $(document).ready(function () {
         event.preventDefault();
 
         const userInput = $("#user-input").val();
-        const count = countUp(userInput);
         const robogersResponse = beepBoop(userInput);
 
         $("#response").text(robogersResponse);
         $("#response").slideDown(robogersResponse);
-        // $("#response").text(count);
-        // $("#response").slideDown(count);
+
 
     });
 });
